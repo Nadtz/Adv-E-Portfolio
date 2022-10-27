@@ -12,6 +12,14 @@ li {
     list-style-type: none;
 }
 
+section {
+    background-color: rgb(245, 245, 245);
+}
+/* NAVIGATION */
+
+#landing-page {
+    min-height: 100vh; /* to make sure it fit the screen */
+}
 /* NAVIGATION */
 
 nav {
@@ -21,6 +29,7 @@ nav {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    height: 100px;
 }
 
 #personal-logo {
@@ -31,4 +40,19 @@ nav {
 
 .nav__link--list {
     display: flex;
+}
+
+.nav__link {
+    margin: 0 12px;
+}
+
+.nav__link--anchor {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: #242424;
+}
+
+.fa-adjust {
+    font-size: 20px;
 }
