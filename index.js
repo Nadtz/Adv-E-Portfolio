@@ -19,7 +19,7 @@
      }).catch(() => {
         loading.classList.remove("modal__overlay--visible")
         alert(
-            "The email.service is temporarily unavailable. Please contact me directly at nadzzrahim@gmail.com."
+            "The email service is temporarily unavailable. Please contact me directly at nadzzrahim@gmail.com."
         );
      })                                                      /* dont have to use then() if use async/await */
 
@@ -29,4 +29,17 @@
 //    console.log('IT WORKED')
 //    }, 1000);
 
+    }
+
+
+    // let isModalOpen = false;
+    function toggleModal() {
+        console.log('toggleModal()');
+       // if (isModalOpen) {
+         //   isModalOpen = false;
+           // return document.body.classList.remove("modal--open");
+        //}
+
+        //isModalOpen = true;
+        //document.body.classList += " modal--open";
     }
