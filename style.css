@@ -271,7 +271,7 @@ nav {
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
-.modal--open .modal {
+.modal--open {
     z-index: 60;
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.55);
     visibility: visible;
@@ -379,7 +379,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: -1; /* get back to see form page */
+    /*z-index: -1; /* get back to see form page */
 }
 
 .modal__overlay--loading {
@@ -408,7 +408,7 @@ animation: spinner 750ms infinite linear;
         transform: rotate(0);
     }
     100% {
-        transform: rotate(260deg);
+        transform: rotate(360deg);
     }
 }
 
