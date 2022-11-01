@@ -2,6 +2,17 @@
 // service_m6r0lzm
 // 
 
+let contrastToggle = false;
+
+function contrast() {
+
+  if (contrastToggle) {
+    document.body.classList += " dark-theme";
+  } 
+    contrastToggle = !contrastToggle;
+    document.body.classList.remove("dark-theme");
+}
+
  /* async */ function contact(event) {
                 event.preventDefault();
                 const loading = document.querySelector('.modal__overlay--loading');
