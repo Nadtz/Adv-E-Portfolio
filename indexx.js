@@ -15,7 +15,7 @@
                 event.target,
                 'rsPrK5AtL2d9Ax1_E'
                 ).then(() => {                                         /* need to wait for the email server, so add .then() */
-                
+                throw new Error("error");
                 loading.classList.remove("modal__overlay--visible");
                 success.classList += " modal__overlay--visible";
                 }).catch(() => {
@@ -26,30 +26,20 @@
                  })                                                      /* dont have to use then() if use async/await */
 
     
-// setTimeout(() => {
+setTimeout(() => {
  
-//    console.log('IT WORKED')
-//    }, 1000);
-                }
+ console.log('IT WORKED')
+  }, 1000);
+}
 
 
-    // let isModalOpen = false;
-    //function toggleModal() {
-        //console.log('toggleModal()');
-       // if (isModalOpen) {
-         //   isModalOpen = false;
-           // return document.body.classList.remove("modal--open");
-        //}
+let isModalOpen = false;
+function toggleModal() {
+  console.log('peace');
 
-        //isModalOpen = true;
-        //document.body.classList += " modal--open";
-    //}
-
-    function toggleModal() {
-      if (isModalOpen) {
-        isModalOpen = false;
-        return document.body.classList.remove("modal--open");
-      }
-      isModalOpen = true;
-      document.body.classList += " modal--open";
-    }
+if (isModalOpen) {
+  return document.body.classList.remove("modal--open");
+}
+isModalOpen = !isModalOpen;
+document.body.classList += " modal--open";
+}
