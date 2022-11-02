@@ -50,22 +50,22 @@ function contrast() {
                  "The email service is temporarily unavailable. Please contact me directly at nadzzrahim@gmail.com."
                      );
                  })                                                      /* dont have to use then() if use async/await */
-
     
-setTimeout(() => {
+//setTimeout(() => {
  
- console.log('IT WORKED')
-  }, 1000);
+ //console.log('IT WORKED')
+ // }, 1000);
 }
 
 
 let isModalOpen = false;
-function toggleModal() {
-  console.log('peace');
+function modal() {
+  // console.log('peace');
 
 if (isModalOpen) {
   return document.body.classList.remove("modal--open");
-}
+} else {
 isModalOpen = !isModalOpen;
 document.body.classList += " modal--open";
+ }
 }
