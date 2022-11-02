@@ -5,12 +5,12 @@
 let contrastToggle = false;
 
 function contrast() {
-
+  contrastToggle = !contrastToggle;
   if (contrastToggle) {
     document.body.classList += " dark-theme";
-  } 
-    contrastToggle = !contrastToggle;
+  } else {
     document.body.classList.remove("dark-theme");
+  }
 }
 
  /* async */ function contact(event) {
