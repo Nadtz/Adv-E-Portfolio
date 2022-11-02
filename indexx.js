@@ -1,6 +1,21 @@
 // template_wigd9m1
 // service_m6r0lzm
 // 
+const scaleFactor = 1 / 20 ;
+
+function moveBackground(event) {
+  const shapes = document.querySelectorAll(".shape"); // .shape in array
+  const x = event.clientX * scaleFactor; // to minimize size range of shape movement relative to mouse movement
+  const y = event.clientY * scaleFactor;
+
+  // console.log(x, y)
+  for (let i = 0; i < shapes.length; i++) {
+    const isOdd = i % 2 !== 0;
+    console.log(isOdd);
+    const boolInt = isOdd ? -1 : 1 ;
+    shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`;
+  }
+}
 
 let contrastToggle = false;
 
